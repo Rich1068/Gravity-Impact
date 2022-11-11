@@ -8,8 +8,8 @@ namespace Gravity_Impact
     public partial class Form1 : Form
     {
         int gravity;
-        int gravityValue = 8;
-        int obstacleSpeed = 10;
+        int gravityValue = 0;
+        int obstacleSpeed = 0;
         int score = 0;
         int highScore = 0;
         bool gameStart = false;
@@ -51,6 +51,7 @@ namespace Gravity_Impact
             {
                 RestartGame();
             }
+           
         }
 
         private void GameTimerEvent(object sender, EventArgs e)
@@ -148,7 +149,6 @@ namespace Gravity_Impact
             gravityValue = 8;
             gravity = gravityValue;
             obstacleSpeed = 10;
-
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox && x.Tag as string == "obstacle")
@@ -160,7 +160,6 @@ namespace Gravity_Impact
             gameTimer.Start();
 
         }
-
         private void lblScore_Click(object sender, EventArgs e)
         {
 
