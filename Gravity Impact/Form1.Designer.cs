@@ -48,9 +48,9 @@
             // 
             this.pictureBox1.BackgroundImage = global::Gravity_Impact.Properties.Resources.download;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(-24, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(-28, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(845, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(873, 50);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -58,9 +58,9 @@
             // 
             this.pictureBox2.BackgroundImage = global::Gravity_Impact.Properties.Resources.download;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(-15, 377);
+            this.pictureBox2.Location = new System.Drawing.Point(-28, 377);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(845, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(873, 50);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -77,11 +77,12 @@
             this.lblScore.BackColor = System.Drawing.Color.Transparent;
             this.lblScore.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblScore.ForeColor = System.Drawing.Color.Transparent;
-            this.lblScore.Location = new System.Drawing.Point(12, 18);
+            this.lblScore.Location = new System.Drawing.Point(27, 18);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(57, 21);
+            this.lblScore.Size = new System.Drawing.Size(56, 21);
             this.lblScore.TabIndex = 2;
-            this.lblScore.Text = "label1";
+            this.lblScore.Text = "Score:";
+            this.lblScore.Click += new System.EventHandler(this.lblScore_Click);
             // 
             // lblhighScore
             // 
@@ -89,11 +90,11 @@
             this.lblhighScore.BackColor = System.Drawing.Color.Transparent;
             this.lblhighScore.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblhighScore.ForeColor = System.Drawing.Color.Transparent;
-            this.lblhighScore.Location = new System.Drawing.Point(12, 395);
+            this.lblhighScore.Location = new System.Drawing.Point(27, 395);
             this.lblhighScore.Name = "lblhighScore";
-            this.lblhighScore.Size = new System.Drawing.Size(57, 21);
+            this.lblhighScore.Size = new System.Drawing.Size(97, 21);
             this.lblhighScore.TabIndex = 3;
-            this.lblhighScore.Text = "label2";
+            this.lblhighScore.Text = "HighScore: ";
             this.lblhighScore.Click += new System.EventHandler(this.label2_Click);
             // 
             // player

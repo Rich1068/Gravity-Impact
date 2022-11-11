@@ -63,13 +63,13 @@ namespace Gravity_Impact
             {
                 gravity = 0;
                 player.Top = 303;
-                
+                player.Image = Properties.Resources.catto;
             }
             else if (player.Top < 39)
             {
                 gravity = 0;
                 player.Top = 39;
-                
+                player.Image = Properties.Resources.Dead;
             }
             // move the obstacles
             foreach (Control x in this.Controls)
@@ -124,6 +124,11 @@ namespace Gravity_Impact
             }
 
             gameTimer.Start();
+
+        }
+
+        private void lblScore_Click(object sender, EventArgs e)
+        {
 
         }
     }
