@@ -1,6 +1,7 @@
 using static System.Formats.Asn1.AsnWriter;
 using System.Numerics;
 using System;
+using System.Runtime.CompilerServices;
 
 namespace Gravity_Impact
 {
@@ -110,25 +111,30 @@ namespace Gravity_Impact
                     }
                 }
             }
+            if (score > 500)
+            {
+                obstacleSpeed = 12;
+                gravityValue = 9;
+            }
             if (score > 1000)
             {
                 obstacleSpeed = 15;
-                gravityValue = 9;
+                gravityValue = 12;
             }
             if (score > 1500)
             {
                 obstacleSpeed = 17;
-                gravityValue = 11;
+                gravityValue = 13;
             }
             if (score > 2500)
             {
                 obstacleSpeed = 20;
-                gravityValue = 12;
+                gravityValue = 14;
             }
             if (score > 4000)
             {
                 obstacleSpeed = 23;
-                gravityValue = 14;
+                gravityValue = 15;
             }
         }
         private void RestartGame()
