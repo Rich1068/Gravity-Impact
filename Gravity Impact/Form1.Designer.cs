@@ -74,6 +74,7 @@
             // lblScore
             // 
             this.lblScore.AutoSize = true;
+            this.lblScore.BackColor = System.Drawing.Color.Transparent;
             this.lblScore.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblScore.ForeColor = System.Drawing.Color.Transparent;
             this.lblScore.Location = new System.Drawing.Point(12, 18);
@@ -85,6 +86,7 @@
             // lblhighScore
             // 
             this.lblhighScore.AutoSize = true;
+            this.lblhighScore.BackColor = System.Drawing.Color.Transparent;
             this.lblhighScore.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblhighScore.ForeColor = System.Drawing.Color.Transparent;
             this.lblhighScore.Location = new System.Drawing.Point(12, 395);
@@ -97,7 +99,7 @@
             // player
             // 
             this.player.Image = global::Gravity_Impact.Properties.Resources.catto;
-            this.player.Location = new System.Drawing.Point(101, 303);
+            this.player.Location = new System.Drawing.Point(132, 303);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(67, 80);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

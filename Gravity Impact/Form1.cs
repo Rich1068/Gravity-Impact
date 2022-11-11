@@ -32,15 +32,17 @@ namespace Gravity_Impact
         {
             if (e.KeyCode == Keys.Space)
             {
-                if (player.Top == 303)
+                if (player.Top == 303 || player.Top > 180)
                 {
                     player.Top -= 10;
                     gravity = -gravityValue;
+                    player.Image = Properties.Resources.catto;
                 }
-                else if (player.Top == 39)
+                else if (player.Top == 39 || player.Top < 180)
                 {
                     player.Top += 10;
                     gravity = gravityValue;
+                    player.Image = Properties.Resources.Dead;
                 }
             }
 
@@ -55,19 +57,19 @@ namespace Gravity_Impact
             lblScore.Text = "Score: " + score;
             lblhighScore.Text = "High Score: " + highScore;
             player.Top += gravity;
-
+            score += 1;
             // when the player land on the platforms. 
             if (player.Top > 303)
             {
                 gravity = 0;
                 player.Top = 303;
-                player.Image = Properties.Resources.Dead;
+                
             }
             else if (player.Top < 39)
             {
                 gravity = 0;
                 player.Top = 39;
-                player.Image = Properties.Resources.catto;
+                
             }
             // move the obstacles
             foreach (Control x in this.Controls)
@@ -79,7 +81,7 @@ namespace Gravity_Impact
                     if (x.Left < -100)
                     {
                         x.Left = random.Next(1200, 3000);
-                        score += 1;
+                        
                     }
 
                     if (x.Bounds.IntersectsWith(player.Bounds))
@@ -94,6 +96,11 @@ namespace Gravity_Impact
                         }
                     }
                 }
+            }
+            if (score > 1000)
+            {
+                obstacleSpeed = 15;
+                gravityValue = 9;
             }
         }
         private void RestartGame()
