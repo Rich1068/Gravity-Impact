@@ -96,11 +96,39 @@ namespace Gravity_Impact
                         }
                     }
                 }
+                if (x is PictureBox && x.Tag as string == "coin")
+                {
+                    x.Left -= obstacleSpeed;
+                    if (x.Left < -100)
+                    {
+                        x.Left = random.Next(1200, 3000);
+                    }
+                    if (x.Bounds.IntersectsWith(player.Bounds))
+                    {
+                        x.Left = random.Next(1200, 3000);
+                        score += 100;
+                    }
+                }
             }
             if (score > 1000)
             {
                 obstacleSpeed = 15;
                 gravityValue = 9;
+            }
+            if (score > 1500)
+            {
+                obstacleSpeed = 17;
+                gravityValue = 11;
+            }
+            if (score > 2500)
+            {
+                obstacleSpeed = 20;
+                gravityValue = 12;
+            }
+            if (score > 4000)
+            {
+                obstacleSpeed = 23;
+                gravityValue = 14;
             }
         }
         private void RestartGame()

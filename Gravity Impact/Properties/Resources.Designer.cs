@@ -93,6 +93,16 @@ namespace Gravity_Impact.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cowJAM {
+            get {
+                object obj = ResourceManager.GetObject("cowJAM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Dead {
             get {
                 object obj = ResourceManager.GetObject("Dead", resourceCulture);
