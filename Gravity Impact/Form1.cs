@@ -13,6 +13,7 @@ namespace Gravity_Impact
         int score = 0;
         int highScore = 0;
         bool gameStart = false;
+
         Random random = new Random();
         public Form1()
         {
@@ -49,6 +50,7 @@ namespace Gravity_Impact
 
             if (e.KeyCode == Keys.Enter && gameStart == false)
             {
+                Instructions.Text = "";
                 RestartGame();
             }
            
@@ -57,7 +59,8 @@ namespace Gravity_Impact
         private void GameTimerEvent(object sender, EventArgs e)
         {
             lblScore.Text = "Score: " + score;
-            lblhighScore.Text = "High Score: " + highScore;
+            lblhighScore.Text = "High Score:";
+            lblscore_value.Text = Properties.Settings.Default.h_score;
             player.Top += gravity;
             score += 1;
             // when the player land on the platforms. 
@@ -92,9 +95,13 @@ namespace Gravity_Impact
                         lblScore.Text += " Game Over!! Press Enter to Restart.";
                         gameStart = false;
                         // set the high score 
-                        if (score > highScore)
+                        int a = Int32.Parse(lblscore_value.Text);
+                        if (score>a)
                         {
                             highScore = score;
+                            lblscore_value.Text = highScore.ToString();
+                            Properties.Settings.Default.h_score = lblscore_value.Text;
+                            Properties.Settings.Default.Save();
                         }
                     }
                 }
@@ -141,8 +148,10 @@ namespace Gravity_Impact
         private void RestartGame()
         {
             lblScore.Parent = pictureBox1;
+            lblscore_value.Parent = pictureBox2;
             lblhighScore.Parent = pictureBox2;
             lblhighScore.Top = 0;
+            lblscore_value.Top = 0;
             player.Location = new Point(98, 203);
             player.Image = Properties.Resources.catto;
             score = 0;
@@ -163,6 +172,11 @@ namespace Gravity_Impact
         private void lblScore_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FormClose(object sender, FormClosedEventArgs e)
+        {
+            
         }
     }
 }

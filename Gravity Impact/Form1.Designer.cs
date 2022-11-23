@@ -38,6 +38,9 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lblscore_value = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Instructions = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
@@ -93,9 +96,9 @@
             this.lblhighScore.ForeColor = System.Drawing.Color.Transparent;
             this.lblhighScore.Location = new System.Drawing.Point(27, 395);
             this.lblhighScore.Name = "lblhighScore";
-            this.lblhighScore.Size = new System.Drawing.Size(97, 21);
+            this.lblhighScore.Size = new System.Drawing.Size(93, 21);
             this.lblhighScore.TabIndex = 3;
-            this.lblhighScore.Text = "HighScore: ";
+            this.lblhighScore.Text = "HighScore:";
             this.lblhighScore.Click += new System.EventHandler(this.label2_Click);
             // 
             // player
@@ -141,6 +144,41 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Tag = "coin";
             // 
+            // lblscore_value
+            // 
+            this.lblscore_value.AutoSize = true;
+            this.lblscore_value.BackColor = System.Drawing.Color.Transparent;
+            this.lblscore_value.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblscore_value.ForeColor = System.Drawing.Color.Transparent;
+            this.lblscore_value.Location = new System.Drawing.Point(130, 395);
+            this.lblscore_value.Name = "lblscore_value";
+            this.lblscore_value.Size = new System.Drawing.Size(19, 21);
+            this.lblscore_value.TabIndex = 8;
+            this.lblscore_value.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(325, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 21);
+            this.label1.TabIndex = 9;
+            // 
+            // Instructions
+            // 
+            this.Instructions.AutoSize = true;
+            this.Instructions.BackColor = System.Drawing.Color.Transparent;
+            this.Instructions.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Instructions.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Instructions.Location = new System.Drawing.Point(268, 139);
+            this.Instructions.Name = "Instructions";
+            this.Instructions.Size = new System.Drawing.Size(338, 47);
+            this.Instructions.TabIndex = 10;
+            this.Instructions.Text = "Press Enter to Start";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -148,6 +186,9 @@
             this.BackgroundImage = global::Gravity_Impact.Properties.Resources.bef05f3bc48d34bd386b521e970dd801_1822064499909099042;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(812, 425);
+            this.Controls.Add(this.Instructions);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblscore_value);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.lblhighScore);
             this.Controls.Add(this.lblScore);
@@ -159,6 +200,7 @@
             this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormClose);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -182,5 +224,8 @@
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
         private PictureBox pictureBox3;
+        private Label lblscore_value;
+        private Label label1;
+        private Label Instructions;
     }
 }
