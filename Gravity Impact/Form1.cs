@@ -169,14 +169,5 @@ namespace Gravity_Impact
             gameTimer.Start();
 
         }
-        private void lblScore_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormClose(object sender, FormClosedEventArgs e)
-        {
-            
-        }
     }
 }
