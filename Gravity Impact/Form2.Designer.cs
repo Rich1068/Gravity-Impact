@@ -28,51 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.SuspendLayout();
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblTitle.Location = new System.Drawing.Point(261, 76);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(279, 50);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Gravity Impact";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(334, 176);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 39);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Start";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Gravity_Impact.Properties.Resources.download;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.lblTitle);
+            this.ClientSize = new System.Drawing.Size(588, 450);
+            this.DoubleBuffered = true;
             this.Name = "Form2";
             this.Text = "Form2";
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.pressEnter);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Label lblTitle;
-        private Button button1;
     }
 }

@@ -1,4 +1,4 @@
-namespace Gravity_Impact
+﻿namespace Gravity_Impact
 {
     public partial class Form2 : Form
     {
@@ -8,11 +8,14 @@ namespace Gravity_Impact
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pressEnter(object sender, KeyEventArgs e)
         {
-            Form1 f1 = new Form1();
-            f1.Show();
-            this.Hide();
+            if (e.KeyCode == Keys.Enter)
+            {
+                Form1 f1 = new Form1();
+                f1.Show();
+                this.Hide();
+            }
         }
     }
 }
