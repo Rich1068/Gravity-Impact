@@ -85,7 +85,6 @@
             this.lblScore.Size = new System.Drawing.Size(56, 21);
             this.lblScore.TabIndex = 2;
             this.lblScore.Text = "Score:";
-            this.lblScore.Click += new System.EventHandler(this.lblScore_Click);
             // 
             // lblhighScore
             // 
@@ -98,7 +97,6 @@
             this.lblhighScore.Size = new System.Drawing.Size(93, 21);
             this.lblhighScore.TabIndex = 3;
             this.lblhighScore.Text = "HighScore:";
-            this.lblhighScore.Click += new System.EventHandler(this.label2_Click);
             // 
             // player
             // 
@@ -199,7 +197,6 @@
             this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormClose);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
