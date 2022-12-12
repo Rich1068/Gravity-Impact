@@ -41,13 +41,14 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblscore_value = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Instructions = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -140,7 +141,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::Gravity_Impact.Properties.Resources.Coins;
-            this.pictureBox3.Location = new System.Drawing.Point(534, 165);
+            this.pictureBox3.Location = new System.Drawing.Point(618, 164);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 91);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -171,17 +172,16 @@
             this.label1.Size = new System.Drawing.Size(0, 21);
             this.label1.TabIndex = 9;
             // 
-            // Instructions
+            // pictureBox6
             // 
-            this.Instructions.AutoSize = true;
-            this.Instructions.BackColor = System.Drawing.Color.Transparent;
-            this.Instructions.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Instructions.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Instructions.Location = new System.Drawing.Point(268, 139);
-            this.Instructions.Name = "Instructions";
-            this.Instructions.Size = new System.Drawing.Size(338, 47);
-            this.Instructions.TabIndex = 10;
-            this.Instructions.Text = "Press Enter to Start";
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::Gravity_Impact.Properties.Resources.Instructions;
+            this.pictureBox6.Location = new System.Drawing.Point(205, 94);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(446, 138);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 11;
+            this.pictureBox6.TabStop = false;
             // 
             // Form1
             // 
@@ -190,10 +190,9 @@
             this.BackgroundImage = global::Gravity_Impact.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(812, 425);
-            this.Controls.Add(this.Instructions);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblscore_value);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.lblhighScore);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.pictureBox2);
@@ -201,9 +200,11 @@
             this.Controls.Add(this.player);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox6);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -212,6 +213,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,6 +232,6 @@
         private PictureBox pictureBox3;
         private Label lblscore_value;
         private Label label1;
-        private Label Instructions;
+        private PictureBox pictureBox6;
     }
 }

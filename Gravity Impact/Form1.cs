@@ -40,7 +40,7 @@ namespace Gravity_Impact
 
             if (e.KeyCode == Keys.Enter && gameStart == false)
             {
-                Instructions.Text = "";
+                pictureBox6.Hide();
                 RestartGame();
             }
            
@@ -84,6 +84,8 @@ namespace Gravity_Impact
                         gameTimer.Stop();
                         lblScore.Text += " Game Over!! Press Enter to Restart.";
                         gameStart = false;
+                        Form3 f3 = new Form3();
+                        f3.Show();
                         // set the high score 
                         int a = Int32.Parse(lblscore_value.Text);
                         if (score>a)
@@ -100,11 +102,11 @@ namespace Gravity_Impact
                     x.Left -= obstacleSpeed;
                     if (x.Left < -100)
                     {
-                        x.Left = random.Next(1200, 3000);
+                        x.Left = random.Next(2000, 3000);
                     }
                     if (x.Bounds.IntersectsWith(player.Bounds))
                     {
-                        x.Left = random.Next(1200, 3000);
+                        x.Left = random.Next(2000, 3000);
                         score += 100;
                     }
                 }
@@ -153,6 +155,10 @@ namespace Gravity_Impact
                 if (x is PictureBox && x.Tag as string == "obstacle")
                 {
                     x.Left = random.Next(1200, 3000);
+                }
+                if (x is PictureBox && x.Tag as string == "coin")
+                {
+                    x.Left = random.Next(2000, 3000);
                 }
             }
 
