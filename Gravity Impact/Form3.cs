@@ -21,7 +21,6 @@ namespace Gravity_Impact
         {
             Form1 f1= new Form1();
             f1.Dispose();
-            this.Dispose();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

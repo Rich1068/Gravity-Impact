@@ -84,7 +84,6 @@ namespace Gravity_Impact
                     if (x.Bounds.IntersectsWith(player.Bounds))
                     {
                         gameTimer.Stop();
-                        lblScore.Text += " Game Over!! Press Enter to Restart.";
                         gameStart = false;
                         Form3 f3 = new Form3();
                         f3.Show();
