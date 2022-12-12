@@ -11,9 +11,9 @@ namespace Gravity_Impact
         int gravityValue = 0;
         int obstacleSpeed = 0;
         int score = 0;
+        public static int score3;
         int highScore = 0;
         bool gameStart = false;
-
         Random random = new Random();
         public Form1()
         {
@@ -48,7 +48,7 @@ namespace Gravity_Impact
            
         }
 
-        private void GameTimerEvent(object sender, EventArgs e)
+        public void GameTimerEvent(object sender, EventArgs e)
         {
             lblScore.Text = "Score: " + score;
             lblhighScore.Text = "High Score:";
@@ -83,6 +83,7 @@ namespace Gravity_Impact
 
                     if (x.Bounds.IntersectsWith(player.Bounds))
                     {
+                        score3 = score-1;
                         gameTimer.Stop();
                         gameStart = false;
                         Form3 f3 = new Form3();
@@ -96,7 +97,7 @@ namespace Gravity_Impact
                             Properties.Settings.Default.h_score = lblscore_value.Text;
                             Properties.Settings.Default.Save();
                         }
-                        
+                        pictureBox6.Show();
                     }
                 }
                 if (x is PictureBox && x.Tag as string == "coin")
@@ -141,7 +142,7 @@ namespace Gravity_Impact
         }
         private void RestartGame()
         {
-            
+            gameStart= true;
             lblScore.Parent = pictureBox1;
             lblscore_value.Parent = pictureBox2;
             lblhighScore.Parent = pictureBox2;
@@ -168,5 +169,7 @@ namespace Gravity_Impact
             gameTimer.Start();
 
         }
+        
+
     }
 }

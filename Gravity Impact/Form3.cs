@@ -19,13 +19,27 @@ namespace Gravity_Impact
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Form1 f1= new Form1();
-            f1.Dispose();
+            //quit
+            for (int i = Application.OpenForms.Count - 1; i != -1; i = Application.OpenForms.Count - 1)
+            {
+                Application.OpenForms[i].Close();
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            //retry
+            this.Close();
+
+        }
+        
+
+        private void Form2_load(object sender, EventArgs e)
+        {
+            label1.Text = "Score: " + Form1.score3;
+            label3.Text = Properties.Settings.Default.h_score;
+
+
         }
     }
 }
