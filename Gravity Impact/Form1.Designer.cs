@@ -82,7 +82,7 @@
             this.lblScore.BackColor = System.Drawing.Color.Transparent;
             this.lblScore.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblScore.ForeColor = System.Drawing.Color.Transparent;
-            this.lblScore.Location = new System.Drawing.Point(27, 18);
+            this.lblScore.Location = new System.Drawing.Point(12, 18);
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(56, 21);
             this.lblScore.TabIndex = 2;
@@ -94,7 +94,7 @@
             this.lblhighScore.BackColor = System.Drawing.Color.Transparent;
             this.lblhighScore.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblhighScore.ForeColor = System.Drawing.Color.Transparent;
-            this.lblhighScore.Location = new System.Drawing.Point(27, 395);
+            this.lblhighScore.Location = new System.Drawing.Point(12, 395);
             this.lblhighScore.Name = "lblhighScore";
             this.lblhighScore.Size = new System.Drawing.Size(93, 21);
             this.lblhighScore.TabIndex = 3;
@@ -114,10 +114,10 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::Gravity_Impact.Properties.Resources.Spikes_Top;
+            this.pictureBox4.Image = global::Gravity_Impact.Properties.Resources.New_Enemy;
             this.pictureBox4.Location = new System.Drawing.Point(427, 41);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(67, 80);
+            this.pictureBox4.Size = new System.Drawing.Size(67, 95);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
@@ -127,10 +127,10 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox5.Image = global::Gravity_Impact.Properties.Resources.Spikes_Bottom;
-            this.pictureBox5.Location = new System.Drawing.Point(632, 301);
+            this.pictureBox5.Image = global::Gravity_Impact.Properties.Resources.New_Enemy;
+            this.pictureBox5.Location = new System.Drawing.Point(632, 289);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(67, 80);
+            this.pictureBox5.Size = new System.Drawing.Size(67, 92);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 6;
             this.pictureBox5.TabStop = false;
@@ -154,7 +154,7 @@
             this.lblscore_value.BackColor = System.Drawing.Color.Transparent;
             this.lblscore_value.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblscore_value.ForeColor = System.Drawing.Color.Transparent;
-            this.lblscore_value.Location = new System.Drawing.Point(130, 395);
+            this.lblscore_value.Location = new System.Drawing.Point(111, 395);
             this.lblscore_value.Name = "lblscore_value";
             this.lblscore_value.Size = new System.Drawing.Size(19, 21);
             this.lblscore_value.TabIndex = 8;
