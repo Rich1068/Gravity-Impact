@@ -24,7 +24,7 @@ namespace Gravity_Impact
         {
             if (e.KeyCode == Keys.Space)
             {
-                if (player.Top == 312 || player.Top > 180)
+                if (player.Top == 300 || player.Top > 180)
                 {
                     player.Top -= 10;
                     gravity = -gravityValue;
@@ -54,10 +54,10 @@ namespace Gravity_Impact
             player.Top += gravity;
             score += 1;
             // when the player land on the platforms. 
-            if (player.Top > 312)
+            if (player.Top > 300)
             {
                 gravity = 0;
-                player.Top = 312;
+                player.Top = 300;
                 player.Image = Properties.Resources.Character;
             }
             else if (player.Top < 33)

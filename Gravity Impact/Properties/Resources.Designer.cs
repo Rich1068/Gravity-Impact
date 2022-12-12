@@ -63,6 +63,16 @@ namespace Gravity_Impact.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Background {
+            get {
+                object obj = ResourceManager.GetObject("Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bef05f3bc48d34bd386b521e970dd801_1822064499909099042 {
             get {
                 object obj = ResourceManager.GetObject("bef05f3bc48d34bd386b521e970dd801_1822064499909099042", resourceCulture);
@@ -156,6 +166,26 @@ namespace Gravity_Impact.Properties {
         internal static System.Drawing.Bitmap mcdo {
             get {
                 object obj = ResourceManager.GetObject("mcdo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Platform_Bottom {
+            get {
+                object obj = ResourceManager.GetObject("Platform Bottom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Platform_top {
+            get {
+                object obj = ResourceManager.GetObject("Platform top", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

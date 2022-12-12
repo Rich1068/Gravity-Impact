@@ -52,21 +52,22 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Gravity_Impact.Properties.Resources.download;
+            this.pictureBox1.BackgroundImage = global::Gravity_Impact.Properties.Resources.Platform_top;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(-28, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(873, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(814, 50);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::Gravity_Impact.Properties.Resources.download;
+            this.pictureBox2.BackgroundImage = global::Gravity_Impact.Properties.Resources.Platform_Bottom;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(-28, 377);
+            this.pictureBox2.Location = new System.Drawing.Point(-2, 375);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(873, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(826, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
@@ -103,9 +104,9 @@
             // 
             this.player.BackColor = System.Drawing.Color.Transparent;
             this.player.Image = global::Gravity_Impact.Properties.Resources.Character;
-            this.player.Location = new System.Drawing.Point(130, 312);
+            this.player.Location = new System.Drawing.Point(130, 301);
             this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(67, 80);
+            this.player.Size = new System.Drawing.Size(79, 91);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.player.TabIndex = 4;
             this.player.TabStop = false;
@@ -125,6 +126,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox5.Image = global::Gravity_Impact.Properties.Resources.Spikes_Bottom;
             this.pictureBox5.Location = new System.Drawing.Point(632, 301);
             this.pictureBox5.Name = "pictureBox5";
@@ -138,7 +140,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::Gravity_Impact.Properties.Resources.Coins;
-            this.pictureBox3.Location = new System.Drawing.Point(523, 189);
+            this.pictureBox3.Location = new System.Drawing.Point(534, 165);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 91);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -174,7 +176,7 @@
             this.Instructions.AutoSize = true;
             this.Instructions.BackColor = System.Drawing.Color.Transparent;
             this.Instructions.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Instructions.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Instructions.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Instructions.Location = new System.Drawing.Point(268, 139);
             this.Instructions.Name = "Instructions";
             this.Instructions.Size = new System.Drawing.Size(338, 47);
@@ -185,7 +187,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Gravity_Impact.Properties.Resources.bef05f3bc48d34bd386b521e970dd801_1822064499909099042;
+            this.BackgroundImage = global::Gravity_Impact.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(812, 425);
             this.Controls.Add(this.Instructions);
