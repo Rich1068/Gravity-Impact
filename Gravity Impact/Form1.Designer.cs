@@ -112,8 +112,9 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::Gravity_Impact.Properties.Resources.chinese_tom;
-            this.pictureBox4.Location = new System.Drawing.Point(424, 39);
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::Gravity_Impact.Properties.Resources.Spikes_Top;
+            this.pictureBox4.Location = new System.Drawing.Point(427, 41);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(67, 80);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -123,8 +124,9 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::Gravity_Impact.Properties.Resources.chinese_tom;
-            this.pictureBox5.Location = new System.Drawing.Point(633, 303);
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = global::Gravity_Impact.Properties.Resources.Spikes_Bottom;
+            this.pictureBox5.Location = new System.Drawing.Point(632, 301);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(67, 80);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
