@@ -104,10 +104,11 @@
             // player
             // 
             this.player.BackColor = System.Drawing.Color.Transparent;
-            this.player.Image = global::Gravity_Impact.Properties.Resources.Character1;
-            this.player.Location = new System.Drawing.Point(125, 302);
+            this.player.Image = global::Gravity_Impact.Properties.Resources.Character2;
+            this.player.Location = new System.Drawing.Point(139, 299);
             this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(69, 90);
+            this.player.Size = new System.Drawing.Size(60, 80);
+            this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.player.TabIndex = 4;
             this.player.TabStop = false;
             // 
@@ -140,7 +141,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::Gravity_Impact.Properties.Resources.coins2;
-            this.pictureBox3.Location = new System.Drawing.Point(641, 170);
+            this.pictureBox3.Location = new System.Drawing.Point(641, 179);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(58, 62);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -189,16 +190,16 @@
             this.BackgroundImage = global::Gravity_Impact.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(812, 425);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblscore_value);
             this.Controls.Add(this.lblhighScore);
             this.Controls.Add(this.lblScore);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.player);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox6);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

@@ -123,6 +123,26 @@ namespace Gravity_Impact.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Character2 {
+            get {
+                object obj = ResourceManager.GetObject("Character2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Character2R {
+            get {
+                object obj = ResourceManager.GetObject("Character2R", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CharacterR {
             get {
                 object obj = ResourceManager.GetObject("CharacterR", resourceCulture);

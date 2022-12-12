@@ -24,17 +24,17 @@ namespace Gravity_Impact
         {
             if (e.KeyCode == Keys.Space)
             {
-                if (player.Top == 300 || player.Top > 180)
+                if (player.Top == 293 || player.Top > 173)
                 {
                     player.Top -= 10;
                     gravity = -gravityValue;
-                    player.Image = Properties.Resources.Character1;
+                    player.Image = Properties.Resources.Character2;
                 }
-                else if (player.Top == 33 || player.Top < 180)
+                else if (player.Top == 48 || player.Top < 173)
                 {
                     player.Top += 10;
                     gravity = gravityValue;
-                    player.Image = Properties.Resources.Character1R;
+                    player.Image = Properties.Resources.Character2R;
                 }
             }
 
@@ -54,17 +54,17 @@ namespace Gravity_Impact
             player.Top += gravity;
             score += 1;
             // when the player land on the platforms. 
-            if (player.Top > 300)
+            if (player.Top > 293)
             {
                 gravity = 0;
-                player.Top = 300;
-                player.Image = Properties.Resources.Character1;
+                player.Top = 293;
+                player.Image = Properties.Resources.Character2;
             }
-            else if (player.Top < 33)
+            else if (player.Top < 48)
             {
                 gravity = 0;
-                player.Top = 33;
-                player.Image = Properties.Resources.Character1R;
+                player.Top = 48;
+                player.Image = Properties.Resources.Character2R;
             }
             // move the obstacles
             foreach (Control x in this.Controls)
@@ -145,7 +145,7 @@ namespace Gravity_Impact
             lblhighScore.Top = 0;
             lblscore_value.Top = 0;
             player.Location = new Point(98, 203);
-            player.Image = Properties.Resources.Character1;
+            player.Image = Properties.Resources.Character2;
             score = 0;
             gravityValue = 8;
             gravity = gravityValue;
