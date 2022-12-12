@@ -16,5 +16,17 @@ namespace Gravity_Impact
         {
             InitializeComponent();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Form1 f1= new Form1();
+            f1.Dispose();
+            this.Dispose();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

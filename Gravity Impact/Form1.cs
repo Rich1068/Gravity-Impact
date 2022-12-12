@@ -41,8 +41,10 @@ namespace Gravity_Impact
             if (e.KeyCode == Keys.Enter && gameStart == false)
             {
                 pictureBox6.Hide();
+                gameStart= true;
                 RestartGame();
             }
+            
            
         }
 
@@ -95,6 +97,7 @@ namespace Gravity_Impact
                             Properties.Settings.Default.h_score = lblscore_value.Text;
                             Properties.Settings.Default.Save();
                         }
+                        
                     }
                 }
                 if (x is PictureBox && x.Tag as string == "coin")
@@ -139,6 +142,7 @@ namespace Gravity_Impact
         }
         private void RestartGame()
         {
+            
             lblScore.Parent = pictureBox1;
             lblscore_value.Parent = pictureBox2;
             lblhighScore.Parent = pictureBox2;

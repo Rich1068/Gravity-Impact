@@ -233,6 +233,16 @@ namespace Gravity_Impact.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Game_Over {
+            get {
+                object obj = ResourceManager.GetObject("Game Over", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Instructions {
             get {
                 object obj = ResourceManager.GetObject("Instructions", resourceCulture);
@@ -276,6 +286,26 @@ namespace Gravity_Impact.Properties {
         internal static System.Drawing.Bitmap Platform_top {
             get {
                 object obj = ResourceManager.GetObject("Platform top", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap QUIT {
+            get {
+                object obj = ResourceManager.GetObject("QUIT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RETRY {
+            get {
+                object obj = ResourceManager.GetObject("RETRY", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
