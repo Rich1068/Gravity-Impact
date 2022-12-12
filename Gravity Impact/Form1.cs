@@ -28,13 +28,13 @@ namespace Gravity_Impact
                 {
                     player.Top -= 10;
                     gravity = -gravityValue;
-                    player.Image = Properties.Resources.Character;
+                    player.Image = Properties.Resources.Character1;
                 }
                 else if (player.Top == 33 || player.Top < 180)
                 {
                     player.Top += 10;
                     gravity = gravityValue;
-                    player.Image = Properties.Resources.CharacterR;
+                    player.Image = Properties.Resources.Character1R;
                 }
             }
 
@@ -58,13 +58,13 @@ namespace Gravity_Impact
             {
                 gravity = 0;
                 player.Top = 300;
-                player.Image = Properties.Resources.Character;
+                player.Image = Properties.Resources.Character1;
             }
             else if (player.Top < 33)
             {
                 gravity = 0;
                 player.Top = 33;
-                player.Image = Properties.Resources.CharacterR;
+                player.Image = Properties.Resources.Character1R;
             }
             // move the obstacles
             foreach (Control x in this.Controls)
@@ -145,7 +145,7 @@ namespace Gravity_Impact
             lblhighScore.Top = 0;
             lblscore_value.Top = 0;
             player.Location = new Point(98, 203);
-            player.Image = Properties.Resources.Character;
+            player.Image = Properties.Resources.Character1;
             score = 0;
             gravityValue = 8;
             gravity = gravityValue;

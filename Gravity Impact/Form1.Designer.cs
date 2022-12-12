@@ -104,11 +104,10 @@
             // player
             // 
             this.player.BackColor = System.Drawing.Color.Transparent;
-            this.player.Image = global::Gravity_Impact.Properties.Resources.Character;
-            this.player.Location = new System.Drawing.Point(130, 301);
+            this.player.Image = global::Gravity_Impact.Properties.Resources.Character1;
+            this.player.Location = new System.Drawing.Point(125, 302);
             this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(79, 91);
-            this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.player.Size = new System.Drawing.Size(69, 90);
             this.player.TabIndex = 4;
             this.player.TabStop = false;
             // 
@@ -118,7 +117,7 @@
             this.pictureBox4.Image = global::Gravity_Impact.Properties.Resources.New_Enemy;
             this.pictureBox4.Location = new System.Drawing.Point(427, 41);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(67, 95);
+            this.pictureBox4.Size = new System.Drawing.Size(57, 95);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
@@ -129,9 +128,9 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox5.Image = global::Gravity_Impact.Properties.Resources.New_Enemy;
-            this.pictureBox5.Location = new System.Drawing.Point(632, 289);
+            this.pictureBox5.Location = new System.Drawing.Point(641, 289);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(67, 92);
+            this.pictureBox5.Size = new System.Drawing.Size(58, 92);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 6;
             this.pictureBox5.TabStop = false;
@@ -140,10 +139,10 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::Gravity_Impact.Properties.Resources.Coins;
-            this.pictureBox3.Location = new System.Drawing.Point(618, 164);
+            this.pictureBox3.Image = global::Gravity_Impact.Properties.Resources.coins2;
+            this.pictureBox3.Location = new System.Drawing.Point(641, 170);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 91);
+            this.pictureBox3.Size = new System.Drawing.Size(58, 62);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
