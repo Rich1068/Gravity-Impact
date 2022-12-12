@@ -101,11 +101,12 @@
             // 
             // player
             // 
-            this.player.Image = global::Gravity_Impact.Properties.Resources.catto;
-            this.player.Location = new System.Drawing.Point(132, 303);
+            this.player.BackColor = System.Drawing.Color.Transparent;
+            this.player.Image = global::Gravity_Impact.Properties.Resources.Character;
+            this.player.Location = new System.Drawing.Point(130, 312);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(67, 80);
-            this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.player.TabIndex = 4;
             this.player.TabStop = false;
             // 
@@ -133,10 +134,11 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Gravity_Impact.Properties.Resources.cowJAM;
-            this.pictureBox3.Location = new System.Drawing.Point(548, 189);
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::Gravity_Impact.Properties.Resources.Coins;
+            this.pictureBox3.Location = new System.Drawing.Point(523, 189);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(58, 56);
+            this.pictureBox3.Size = new System.Drawing.Size(100, 91);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
