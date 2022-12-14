@@ -34,11 +34,11 @@ namespace Gravity_Impact
         }
         
 
-        private void Form2_load(object sender, EventArgs e)
+        private void Form3_Load(object sender, EventArgs e)
         {
-            label1.Text = "Score: " + Form1.score3;
+            //score and highscore
+            label1.Text = "Score:  " + Form1.score3;
             label3.Text = Properties.Settings.Default.h_score;
-
 
         }
     }

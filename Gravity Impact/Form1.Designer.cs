@@ -57,7 +57,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(-2, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(814, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(1291, 61);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -65,9 +65,9 @@
             // 
             this.pictureBox2.BackgroundImage = global::Gravity_Impact.Properties.Resources.Platform_Bottom;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(-2, 375);
+            this.pictureBox2.Location = new System.Drawing.Point(-2, 605);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(826, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(1291, 67);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -95,7 +95,7 @@
             this.lblhighScore.BackColor = System.Drawing.Color.Transparent;
             this.lblhighScore.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblhighScore.ForeColor = System.Drawing.Color.Transparent;
-            this.lblhighScore.Location = new System.Drawing.Point(12, 395);
+            this.lblhighScore.Location = new System.Drawing.Point(12, 630);
             this.lblhighScore.Name = "lblhighScore";
             this.lblhighScore.Size = new System.Drawing.Size(93, 21);
             this.lblhighScore.TabIndex = 3;
@@ -105,9 +105,9 @@
             // 
             this.player.BackColor = System.Drawing.Color.Transparent;
             this.player.Image = global::Gravity_Impact.Properties.Resources.Character2;
-            this.player.Location = new System.Drawing.Point(139, 299);
+            this.player.Location = new System.Drawing.Point(88, 470);
             this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(60, 80);
+            this.player.Size = new System.Drawing.Size(100, 129);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.player.TabIndex = 4;
             this.player.TabStop = false;
@@ -116,9 +116,9 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::Gravity_Impact.Properties.Resources.New_Enemy;
-            this.pictureBox4.Location = new System.Drawing.Point(427, 41);
+            this.pictureBox4.Location = new System.Drawing.Point(690, 51);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(57, 95);
+            this.pictureBox4.Size = new System.Drawing.Size(88, 150);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
@@ -129,9 +129,9 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox5.Image = global::Gravity_Impact.Properties.Resources.New_Enemy;
-            this.pictureBox5.Location = new System.Drawing.Point(641, 289);
+            this.pictureBox5.Location = new System.Drawing.Point(1005, 463);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(58, 92);
+            this.pictureBox5.Size = new System.Drawing.Size(88, 150);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 6;
             this.pictureBox5.TabStop = false;
@@ -141,9 +141,9 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::Gravity_Impact.Properties.Resources.coins2;
-            this.pictureBox3.Location = new System.Drawing.Point(641, 179);
+            this.pictureBox3.Location = new System.Drawing.Point(959, 278);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(58, 62);
+            this.pictureBox3.Size = new System.Drawing.Size(86, 91);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
@@ -155,7 +155,7 @@
             this.lblscore_value.BackColor = System.Drawing.Color.Transparent;
             this.lblscore_value.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblscore_value.ForeColor = System.Drawing.Color.Transparent;
-            this.lblscore_value.Location = new System.Drawing.Point(111, 395);
+            this.lblscore_value.Location = new System.Drawing.Point(111, 630);
             this.lblscore_value.Name = "lblscore_value";
             this.lblscore_value.Size = new System.Drawing.Size(19, 21);
             this.lblscore_value.TabIndex = 8;
@@ -176,9 +176,9 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::Gravity_Impact.Properties.Resources.Instructions;
-            this.pictureBox6.Location = new System.Drawing.Point(205, 94);
+            this.pictureBox6.Location = new System.Drawing.Point(397, 141);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(446, 138);
+            this.pictureBox6.Size = new System.Drawing.Size(546, 210);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 11;
             this.pictureBox6.TabStop = false;
@@ -189,23 +189,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Gravity_Impact.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(812, 425);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox3);
+            this.ClientSize = new System.Drawing.Size(1281, 670);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblscore_value);
             this.Controls.Add(this.lblhighScore);
             this.Controls.Add(this.lblScore);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.player);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox6);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Gravity Impact";
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
