@@ -199,7 +199,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Setup1"
         "ProductCode" = "8:{EE3F4901-F175-40CC-AC6B-4555FA70CB22}"
-        "PackageCode" = "8:{6C87C2BD-7B08-4AE2-BCBC-C00BB900BDD5}"
+        "PackageCode" = "8:{FE0858C4-EF04-4C36-84A3-1613BBD4F95A}"
         "UpgradeCode" = "8:{B6072614-2F2C-4DC7-B9BD-CEB5AFB56301}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -319,7 +319,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_2A15ABE4A131498FA9EB6EBDADD05EDC"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_ADD322AED8714D8094C19634179D772C"
             {
             "Name" = "8:Gravity Impact"
             "Arguments" = "8:"
